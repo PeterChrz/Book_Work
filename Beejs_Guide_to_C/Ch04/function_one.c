@@ -11,7 +11,11 @@ int plus_one(int n) // the "Definition"
 
 
 // We can then call this function in main() and assign it to local var j.
-// Functions must all come before main().
+// Functions must all come before main(), unless you use function prototypes.
+//
+//In this case we could have created a function prototype :
+//int plus_one(int n);
+//
 
 int main(void) {
 
