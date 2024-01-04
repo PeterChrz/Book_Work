@@ -1,0 +1,10 @@
+examples:
+
+"Hello, world!\n"
+
+"This is a test."
+
+"When asked if this string had quotes in it, she replied, \"It does.\""
+
+// Double quotes are for sequences of characters,
+// Single quotes are for chars.
