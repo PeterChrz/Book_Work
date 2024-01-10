@@ -7,3 +7,7 @@ Using this centralized repo for everything I can easily contribute and update th
 
 ### Python_for_DevOps - O'Reilly's book on effective automation
 - This is a fantastic read.
+
+### Beej's Guide to C 
+- Excellent guide to C programming, very relatable examples and explanations. 
+- https://beej.us/guide/bgc
