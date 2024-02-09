@@ -52,7 +52,10 @@ ssh-add /home/user/.ssh/alt_id_rsa
 
 ### Github-CLI
 
+You need a machine with github command line installed (gh).
+
 ```sh
+gh auth login
 gh repo clone GHF-practice/Book_Work
 ```
 
@@ -78,11 +81,70 @@ git commit -m "Updating README.md"
 
 ## Branches
 
-## Remotes
+List of branches
+
+```sh
+git branch
+```
+
+Create new branch
+
+```sh
+git branch <name>
+```
+
+Move over to another branch
+```sh
+git checkout <name>
+```
+
+When we make changes on that branch we need to create the branch in the repo before we can push changes to it. You can do it manually or through a single command. 
+
+```sh
+git push --set-upstream origin dev
+-or-
+git push -u origin dev
+```
+
+>To help keep track of branches using extensions like `git graph` and `git log graph` are helpful.
 
 ## Stashing
 
+When you need to pause on something you're working on, you can stash it.
+
+```sh
+git add .
+git stash save <name>
+```
+To check your current stashes:
+
+```sh
+git stash list
+```
+
+
+To bring it back, run the following command:
+
+```sh
+git stash pop
+-or-
+git stash apply (last stash)
+```
+
+
 ## Merging
+
+From your branch run:
+```sh
+git merge main
+```
+
+After this you need to run:
+```sh
+git commit
+```
+>Run without a commit message, as it injects it's own.
+>You may also need to resolve any conflicts between branches before the merge completes. 
 
 ## Add 
 
