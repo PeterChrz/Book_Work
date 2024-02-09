@@ -23,11 +23,31 @@ We have three ways of cloning: HTTPS, SSH and Github-cli
 ```sh 
 git clone https://github.com/GHF-practice/Book_Work.git
 ```
+> You'll need to generate a personal access token,
+www.github.com/settings/token
+This will be used as a password when pushing and commiting. 
 
 ### SSH
 
 ```sh
 git clone git@github.com:GHF-practice/Book_Work.git
+```
+
+You will need to create an ssh keypair and add that to github settings SSH Keys.
+
+```sh
+ssh-keygen -t rsa
+```
+
+You can test connections with:
+```sh
+ssh -t git@github.com
+```
+
+If you create a non default key, then you may need to add it. 
+```sh
+eval 'ssh agent'
+ssh-add /home/user/.ssh/alt_id_rsa
 ```
 
 ### Github-CLI
