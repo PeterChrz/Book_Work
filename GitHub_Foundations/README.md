@@ -146,6 +146,8 @@ git commit
 >Run without a commit message, as it injects it's own.
 >You may also need to resolve any conflicts between branches before the merge completes. 
 
+You will need to create a pull request to merge branches in GitHub.
+
 ## Add 
 
 When we want to stage the files to be commited.
